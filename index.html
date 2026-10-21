@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║   💍 Premium Animated Indian Wedding Invitation Website                 ║
+║                                                                          ║
+║   Couple: सौ.का. सोनल & चि. देवाकिशन (सोनू)                           ║
+║   Wedding Date: 21 November 2026                                        ║
+║   Venue: गणेशी बारात घर, मछली मण्डी, ग्वालियर (म.प्र.)                ║
+║                                                                          ║
+║   Features:                                                              ║
+║   ✓ Cinematic opening gate animation                                    ║
+║   ✓ Ganesha blessing reveal                                             ║
+║   ✓ Live countdown timer                                                ║
+║   ✓ Complete wedding timeline (6 ceremonies)                            ║
+║   ✓ Google Maps integration                                             ║
+║   ✓ Share functionality                                                 ║
+║   ✓ Optional background music                                           ║
+║   ✓ Mobile responsive design                                            ║
+║   ✓ Smooth scroll animations                                            ║
+║                                                                          ║
+║   Tech Stack: HTML5, CSS3, Vanilla JavaScript                           ║
+║   Deployment: Vercel (Free)                                             ║
+║   Status: ✅ Production Ready                                           ║
+║                                                                          ║
+║   Made with ❤️ and blessings                                            ║
+║   हार्दिक शुभकामनाएं! 🙏✨                                               ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+-->
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सोनल & देवाकिशन - विवाह समारोह</title>
+    <meta name="description" content="आप सादर आमंत्रित हैं - सौ.का. सोनल और चि. देवाकिशन (सोनू) के विवाह समारोह में">
+    <meta property="og:title" content="सोनल & देवाकिशन - विवाह समारोह">
+    <meta property="og:description" content="आप सादर आमंत्रित हैं - 21 नवम्बर 2026">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🕉️%3C/text%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Opening Gate Scene -->
+    <div id="openingScene" class="opening-scene active">
+        <div class="opening-background"></div>
+        <div class="particles" id="particles"></div>
+        
+        <div class="gate-container">
+            <div class="gate gate-left">
+                <div class="gate-decoration"></div>
+                <div class="gate-pattern"></div>
+                <div class="gate-bells"></div>
+                <div class="gate-handle"></div>
+            </div>
+            <div class="gate gate-right">
+                <div class="gate-decoration"></div>
+                <div class="gate-pattern"></div>
+                <div class="gate-bells"></div>
+                <div class="gate-handle"></div>
+            </div>
+            
+            <div class="gate-garland gate-garland-left"></div>
+            <div class="gate-garland gate-garland-right"></div>
+        </div>
+        
+        <div class="opening-content">
+            <div class="om-symbol">॥ श्री गणेशाय नमः ॥</div>
+            <h1 class="opening-title">आप सादर आमंत्रित हैं</h1>
+            <button id="openGateBtn" class="open-gate-btn">
+                <span>आमंत्रण खोलें</span>
+                <div class="btn-glow"></div>
+            </button>
+            <button id="skipIntroBtn" class="skip-intro-btn">Skip Intro</button>
+        </div>
+    </div>
+
+    <!-- Ganesha Blessing Scene -->
+    <div id="ganeshaScene" class="ganesha-scene">
+        <div class="ganesha-background"></div>
+        <div class="golden-light"></div>
+        <div class="falling-petals" id="fallingPetals"></div>
+        
+        <div class="ganesha-content">
+            <div class="ganesha-illustration">
+                <svg viewBox="0 0 200 200" class="ganesha-svg">
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Ganesha Om Symbol -->
+                    <circle cx="100" cy="100" r="80" fill="url(#goldGradient)" opacity="0.2"/>
+                    <circle cx="100" cy="100" r="60" fill="url(#goldGradient)" opacity="0.3"/>
+                    <text x="100" y="120" font-size="60" text-anchor="middle" fill="url(#goldGradient)" filter="url(#glow)" font-family="Noto Serif Devanagari">ॐ</text>
+                </svg>
+            </div>
+            
+            <div class="ganesha-shloka">
+                <p>वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।</p>
+                <p>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Wedding Invitation -->
+    <main id="mainInvitation" class="main-invitation">
+        <!-- Music Toggle -->
+        <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+            <svg class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18V5l12-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="16" r="3"></circle>
+            </svg>
+            <svg class="music-off-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18V5l12-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="16" r="3"></circle>
+                <line x1="2" y1="2" x2="22" y2="22"></line>
+            </svg>
+        </button>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top hidden" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-decoration"></div>
+            
+            <!-- Floating decorative elements -->
+            <div class="floating-decorations">
+                <span class="float-decoration" style="top: 10%; left: 5%; animation-delay: 0s;">🪷</span>
+                <span class="float-decoration" style="top: 20%; right: 8%; animation-delay: 1s;">✨</span>
+                <span class="float-decoration" style="top: 60%; left: 3%; animation-delay: 2s;">🌸</span>
+                <span class="float-decoration" style="top: 70%; right: 5%; animation-delay: 1.5s;">🪔</span>
+                <span class="float-decoration" style="top: 85%; left: 10%; animation-delay: 0.5s;">🌺</span>
+                <span class="float-decoration" style="top: 40%; right: 12%; animation-delay: 2.5s;">✿</span>
+            </div>
+            
+            <div class="hero-content container">
+                <div class="om-symbol-small animate-fade-in">॥ श्री गणेशाय नमः ॥</div>
+                <h2 class="hero-subtitle animate-slide-up">स्नेहिल आमंत्रण</h2>
+                
+                <div class="couple-names animate-scale-in">
+                    <div class="bride-name">
+                        <span class="name-ornament">❋</span>
+                        <h1>सौ.का. सोनल</h1>
+                        <span class="name-ornament">❋</span>
+                    </div>
+                    
+                    <div class="name-divider">
+                        <span class="divider-flower">✿</span>
+                        <span class="divider-text">&</span>
+                        <span class="divider-flower">✿</span>
+                    </div>
+                    
+                    <div class="groom-name">
+                        <span class="name-ornament">❋</span>
+                        <h1>चि. देवाकिशन (सोनू)</h1>
+                        <span class="name-ornament">❋</span>
+                    </div>
+                </div>
+                
+                <div class="invitation-message animate-fade-in-up">
+                    <p>इस मंगलमय अवसर पर हम आपसे आग्रह करते हैं कि कृपया पधार कर</p>
+                    <p>हमारी गरिमा में वृद्धि करें तथा नव दम्पती को आशीर्वाद प्रदान कर</p>
+                    <p>हमें अनुग्रहित करें।</p>
+                </div>
+
+                <!-- Save the Date -->
+                <div class="save-date animate-fade-in-up">
+                    <div class="save-date-ornament"></div>
+                    <p class="save-date-text">Save the Date</p>
+                    <p class="save-date-date">21 नवम्बर 2026</p>
+                    <div class="save-date-ornament"></div>
+                </div>
+
+                <!-- Countdown -->
+                <div class="countdown-container animate-fade-in-up" id="countdownContainer">
+                    <h3 class="countdown-title">समय शेष</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="days">00</span>
+                            <span class="countdown-label">दिन</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">00</span>
+                            <span class="countdown-label">घंटे</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">00</span>
+                            <span class="countdown-label">मिनट</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">00</span>
+                            <span class="countdown-label">सेकंड</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Details Section -->
+        <section class="family-section">
+            <div class="container">
+                <div class="section-ornament-top"></div>
+                
+                <div class="family-grid">
+                    <!-- Bride Family -->
+                    <div class="family-card animate-on-scroll">
+                        <div class="family-card-header">
+                            <div class="family-icon">✿</div>
+                            <h3>कन्या पक्ष</h3>
+                        </div>
+                        <div class="family-content">
+                            <h2 class="family-name">सौ.का. सोनल</h2>
+                            <div class="family-details">
+                                <p>सुपुत्री:</p>
+                                <p class="family-parents">श्री कमलाकिशोर लखेरा</p>
+                                <p>&</p>
+                                <p class="family-parents">श्रीमती मिथलेश लखेरा</p>
+                                <p class="family-subtext">सपुत्री:</p>
+                                <p class="family-parents">श्री राजेश लखेरा</p>
+                                <p>&</p>
+                                <p class="family-parents">श्रीमती संगीता लखेरा</p>
+                            </div>
+                            <div class="family-address">
+                                <svg class="address-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <p>निवासी: लखेरा गली, किलागेट,<br>ग्वालियर (म.प्र.)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Groom Family -->
+                    <div class="family-card animate-on-scroll">
+                        <div class="family-card-header">
+                            <div class="family-icon">❋</div>
+                            <h3>वर पक्ष</h3>
+                        </div>
+                        <div class="family-content">
+                            <h2 class="family-name">चि. देवाकिशन (सोनू)</h2>
+                            <div class="family-details">
+                                <p>सुपुत्र:</p>
+                                <p class="family-parents">स्व. श्री छोटेलाल लखेरा</p>
+                                <p>&</p>
+                                <p class="family-parents">स्व. श्रीमती कटोरी देवी</p>
+                                <p class="family-subtext">सपुत्र:</p>
+                                <p class="family-parents">श्री मनमोहन लखेरा</p>
+                                <p>&</p>
+                                <p class="family-parents">श्रीमती सुमन देवी</p>
+                            </div>
+                            <div class="family-address">
+                                <svg class="address-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <p>निवासी: शताब्दी पुरम फेज-1,<br>ब्लॉक डी.डी. नगर, ग्वालियर (म.प्र.)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-ornament-bottom"></div>
+            </div>
+        </section>
+
+        <!-- Wedding Timeline Section -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-ornament">❋</span>
+                    विवाह समारोह
+                    <span class="title-ornament">❋</span>
+                </h2>
+
+                <div class="timeline">
+                    <div class="timeline-item animate-on-scroll" data-delay="0">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>गणेश पूजन</h3>
+                            <p class="timeline-date">मंगलवार, 17 नवम्बर 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-delay="100">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>काजल, मेहंदी</h3>
+                            <p class="timeline-date">बुधवार, 18 नवम्बर 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-delay="200">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>माता पूजन</h3>
+                            <p class="timeline-date">गुरुवार, 19 नवम्बर 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-delay="300">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>मण्डप, भात</h3>
+                            <p class="timeline-date">शुक्रवार, 20 नवम्बर 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-main-event animate-on-scroll" data-delay="400">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>टीका पाणिग्रहण संस्कार एवं प्रीतिभोज</h3>
+                            <p class="timeline-date">शनिवार, 21 नवम्बर 2026</p>
+                            <p class="timeline-time">सांय 7 बजे से आपके आगमन तक</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-delay="500">
+                        <div class="timeline-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>शुभ विदाई</h3>
+                            <p class="timeline-date">रविवार, 22 नवम्बर 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Section -->
+        <section class="venue-section">
+            <div class="container">
+                <div class="venue-card animate-on-scroll">
+                    <div class="venue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h2 class="venue-title">समारोह स्थल</h2>
+                    <h3 class="venue-name">गणेशी बारात घर</h3>
+                    <p class="venue-address">मछली मण्डी, जिला ग्वालियर (म.प्र.)</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ganesh+Barat+Ghar+Machhli+Mandi+Gwalior+Madhya+Pradesh+India" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="venue-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>मार्ग देखें</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Greetings Section -->
+        <section class="greetings-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-ornament">❋</span>
+                    सादर आमंत्रक एवं परिवार
+                    <span class="title-ornament">❋</span>
+                </h2>
+
+                <div class="greetings-content animate-on-scroll">
+                    <div class="host-family">
+                        <p>श्री कमलाकिशोर लखेरा – श्रीमती मिथलेश लखेरा</p>
+                        <p>श्री राजेश लखेरा – श्रीमती संगीता लखेरा</p>
+                    </div>
+                    
+                    <div class="host-address">
+                        <p><strong>पता:</strong> लखेरा गली, किलागेट, ग्वालियर (म.प्र.)</p>
+                    </div>
+
+                    <div class="contact-numbers">
+                        <h3>संपर्क सूत्र</h3>
+                        <div class="contact-grid">
+                            <a href="tel:+917804065775" class="contact-link">7804065775</a>
+                            <a href="tel:+916263293489" class="contact-link">6263293489</a>
+                            <a href="tel:+916263363129" class="contact-link">6263363129</a>
+                            <a href="tel:+916263755898" class="contact-link">6263755898</a>
+                            <a href="tel:+917000532647" class="contact-link">7000532647</a>
+                        </div>
+                    </div>
+
+                    <button id="shareBtn" class="share-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                        <span>आमंत्रण साझा करें</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wedding-footer">
+            <div class="footer-decoration"></div>
+            <div class="footer-content">
+                <p class="footer-blessing">हार्दिक शुभकामनाओं सहित</p>
+                <p class="footer-names">सोनल & देवाकिशन</p>
+                <div class="footer-divider"></div>
+                <p class="footer-tagline">Made with ❤️ for a beautiful beginning</p>
+            </div>
+        </footer>
+    </main>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="./assets/tune.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

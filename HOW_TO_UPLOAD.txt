@@ -1,0 +1,244 @@
+🚀 HOW TO UPLOAD YOUR WEDDING INVITATION - FREE HOSTING
+================================================================
+
+📁 THIS FOLDER CONTAINS:
+- index.html (main website)
+- styles.css (styling)
+- script.js (functionality)
+- assets/ folder (with tune.mp3 music)
+
+Simply upload these 4 items to any free hosting platform!
+
+================================================================
+🌐 FREE HOSTING OPTIONS (Choose Any One)
+================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ OPTION 1: NETLIFY (EASIEST - RECOMMENDED!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ Time: 3 minutes
+🎯 Difficulty: Very Easy (Drag & Drop)
+
+STEPS:
+1. Go to: https://app.netlify.com/drop
+2. You'll see "Drag & Drop" area
+3. Open this "wedding-deploy" folder
+4. Select ALL 4 items (index.html, styles.css, script.js, assets)
+5. DRAG them onto the Netlify page
+6. DROP!
+7. Wait 10 seconds
+8. DONE! You get a URL like: https://random-name.netlify.app
+
+✨ FEATURES:
+- No sign-up required for first upload!
+- Instant deployment
+- Free SSL (HTTPS)
+- Custom domain support
+- 100GB bandwidth/month
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ OPTION 2: GITHUB PAGES (Most Popular)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ Time: 5 minutes
+🎯 Difficulty: Easy
+
+STEPS:
+1. Go to: https://github.com
+2. Sign up (free) or login
+3. Click "New Repository" (green button)
+4. Name it: "wedding-invitation"
+5. Select "Public"
+6. Click "Create repository"
+7. Click "uploading an existing file"
+8. Drag ALL 4 items from this folder
+9. Click "Commit changes"
+10. Go to Settings → Pages
+11. Select "main" branch
+12. Click "Save"
+13. Wait 2 minutes
+14. Your site: https://yourusername.github.io/wedding-invitation
+
+✨ FEATURES:
+- Free forever
+- Fast & reliable
+- Custom domain support
+- Version control
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ OPTION 3: SURGE.SH (Super Fast!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ Time: 2 minutes (requires command line)
+🎯 Difficulty: Medium
+
+STEPS:
+1. Open Command Prompt or PowerShell
+2. Run: npm install -g surge
+   (needs Node.js installed)
+3. Navigate to this folder:
+   cd C:\Users\DELL\OneDrive\Desktop\wedding\wedding-deploy
+4. Run: surge
+5. Press Enter for email & password (first time)
+6. Press Enter to accept domain
+7. DONE! URL: https://your-site.surge.sh
+
+✨ FEATURES:
+- Fastest deployment
+- Free SSL
+- Custom domains
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ OPTION 4: FIREBASE HOSTING (Google)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ Time: 5 minutes
+🎯 Difficulty: Medium
+
+STEPS:
+1. Go to: https://firebase.google.com
+2. Click "Get Started"
+3. Sign in with Google
+4. Create new project: "wedding-invitation"
+5. Go to Hosting section
+6. Follow setup instructions
+7. Upload files
+8. Your site: https://wedding-invitation.web.app
+
+✨ FEATURES:
+- Google infrastructure
+- Super fast globally
+- Free SSL
+- 10GB bandwidth/month
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ OPTION 5: RENDER (Modern Platform)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ Time: 4 minutes
+🎯 Difficulty: Easy
+
+STEPS:
+1. Go to: https://render.com
+2. Sign up (free)
+3. Click "New" → "Static Site"
+4. Connect GitHub or upload files
+5. Deploy
+6. Your site: https://wedding-invitation.onrender.com
+
+✨ FEATURES:
+- Free tier available
+- Automatic SSL
+- Good performance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ OPTION 6: CLOUDFLARE PAGES (Fast CDN)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️ Time: 5 minutes
+🎯 Difficulty: Easy
+
+STEPS:
+1. Go to: https://pages.cloudflare.com
+2. Sign up (free)
+3. Create a project
+4. Upload files
+5. Deploy
+6. Your site: https://wedding-invitation.pages.dev
+
+✨ FEATURES:
+- Super fast CDN
+- Unlimited bandwidth
+- Free SSL
+
+================================================================
+🏆 MY RECOMMENDATION: NETLIFY DROP
+================================================================
+
+Why Netlify Drop?
+✅ NO sign-up needed
+✅ Just drag & drop
+✅ Instant deployment (10 seconds)
+✅ Get URL immediately
+✅ Perfect for one-time upload
+
+DIRECT LINK: https://app.netlify.com/drop
+
+Just open that link, drag this entire folder, and you're DONE!
+
+================================================================
+📱 AFTER UPLOADING - TEST CHECKLIST
+================================================================
+
+□ Website loads properly
+□ Opening gate animation works
+□ Music plays after clicking
+□ Countdown timer shows correct date
+□ All 6 ceremonies display
+□ Venue map link works
+□ Phone numbers are clickable
+□ Mobile view looks good
+□ Share button works
+
+================================================================
+🎯 WHATSAPP SHARING MESSAGE
+================================================================
+
+Once uploaded, share this message:
+
+---
+🌸 सादर आमंत्रण 🌸
+
+सौ.का. सोनल & चि. देवाकिशन (सोनू)
+के विवाह समारोह में आप सादर आमंत्रित हैं
+
+📅 मुख्य समारोह: 21 नवम्बर 2026
+🕖 समय: सांय 7 बजे से
+📍 स्थान: गणेशी बारात घर, मछली मण्डी, ग्वालियर
+
+🔗 आमंत्रण देखें:
+[YOUR-URL-HERE]
+
+📞 संपर्क: 7804065775
+
+🙏 आपकी उपस्थिति अपेक्षित है
+---
+
+Replace [YOUR-URL-HERE] with your actual website URL!
+
+================================================================
+💡 TIPS
+================================================================
+
+1. Choose NETLIFY DROP for quickest upload (no account needed)
+2. Choose GITHUB PAGES if you want permanent hosting
+3. Test on mobile phone after uploading
+4. Share URL with 2-3 family members first to test
+5. Keep the URL short using bit.ly if needed
+
+================================================================
+❓ HAVING ISSUES?
+================================================================
+
+Q: Files too large?
+A: Your files are small (~2MB total), shouldn't be an issue
+
+Q: Music not playing?
+A: Normal - plays after user interaction, check on phone
+
+Q: Upload fails?
+A: Try different browser (Chrome recommended)
+
+Q: Need help?
+A: Contact: 7804065775
+
+================================================================
+🎊 THAT'S IT!
+================================================================
+
+Your wedding invitation will be live on the internet in minutes!
+
+शुभकामनाएं! 💑✨
+
+================================================================
